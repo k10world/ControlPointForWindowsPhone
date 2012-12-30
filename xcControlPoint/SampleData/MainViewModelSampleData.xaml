@@ -1,0 +1,16 @@
+﻿<local:MainViewModel 
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"       
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="clr-namespace:xcControlPoint" 
+    SampleProperty="Sample Text Property Value">
+    
+    <local:MainViewModel.Items>
+        <local:ItemViewModel LineOne="Storage By File Type" />
+        <local:ItemViewModel LineOne="Site Activity Analysis" />
+        <local:ItemViewModel LineOne="design three" />
+        <local:ItemViewModel LineOne="design four" />
+        <local:ItemViewModel LineOne="design five" />
+        <local:ItemViewModel LineOne="design six" />
+    </local:MainViewModel.Items>
+    
+</local:MainViewModel>

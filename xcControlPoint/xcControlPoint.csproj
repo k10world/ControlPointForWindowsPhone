@@ -1,0 +1,199 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{08469396-DA4C-499A-A10A-AF2A3C2BC468}</ProjectGuid>
+    <ProjectTypeGuids>{C089C8C0-30E0-4E22-80C0-CE093F111A43};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>xcControlPoint</RootNamespace>
+    <AssemblyName>xcControlPoint</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <SilverlightVersion>$(TargetFrameworkVersion)</SilverlightVersion>
+    <TargetFrameworkProfile>WindowsPhone71</TargetFrameworkProfile>
+    <TargetFrameworkIdentifier>Silverlight</TargetFrameworkIdentifier>
+    <SilverlightApplication>true</SilverlightApplication>
+    <SupportedCultures>
+    </SupportedCultures>
+    <XapOutputs>true</XapOutputs>
+    <GenerateSilverlightManifest>true</GenerateSilverlightManifest>
+    <XapFilename>xcControlPoint.xap</XapFilename>
+    <SilverlightManifestTemplate>Properties\AppManifest.xml</SilverlightManifestTemplate>
+    <SilverlightAppEntry>xcControlPoint.App</SilverlightAppEntry>
+    <ValidateXaml>true</ValidateXaml>
+    <ThrowErrorsInValidation>true</ThrowErrorsInValidation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Bin\Release</OutputPath>
+    <DefineConstants>TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Phone" />
+    <Reference Include="Microsoft.Phone.Interop" />
+    <Reference Include="Microsoft.Phone.Controls" />
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.4.5.7\lib\sl4-windowsphone71\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="RestSharp.WindowsPhone">
+      <HintPath>..\packages\RestSharp.103.1\lib\sl4-wp71\RestSharp.WindowsPhone.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.Services.Client, Version=7.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Windows" />
+    <Reference Include="system" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Net" />
+    <Reference Include="System.Xml" />
+    <Reference Include="mscorlib.extensions" />
+    <Reference Include="Telerik.Windows.Controls.Chart, Version=2012.2.607.2040, Culture=neutral, PublicKeyToken=5803cfa389c90ce7, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.Windows.Controls.Primitives, Version=2012.2.607.2040, Culture=neutral, PublicKeyToken=5803cfa389c90ce7, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.Windows.Core, Version=2012.2.607.2040, Culture=neutral, PublicKeyToken=5803cfa389c90ce7, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.Windows.Data, Version=2012.2.607.2040, Culture=neutral, PublicKeyToken=5803cfa389c90ce7, processorArchitecture=MSIL" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="About.xaml.cs">
+      <DependentUpon>About.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Auth\Authorization.cs" />
+    <Compile Include="Auth\CredentialsAndURL.cs" />
+    <Compile Include="Commands\RateThisAppCommand.cs" />
+    <Compile Include="Commands\SendAnEmailCommand.cs" />
+    <Compile Include="DetailsPage.xaml.cs">
+      <DependentUpon>DetailsPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="FinancialData\FinancialDataModel.cs" />
+    <Compile Include="FinancialData\OhlcModel.cs" />
+    <Compile Include="MainPage.xaml.cs">
+      <DependentUpon>MainPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Model\ReportModel.cs" />
+    <Compile Include="PivotPage1.xaml.cs">
+      <DependentUpon>PivotPage1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RadControlsItem1.xaml.cs">
+      <DependentUpon>RadControlsItem1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ReportsPageUserControl.xaml.cs">
+      <DependentUpon>ReportsPageUserControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\TextBoxWithLabel.xaml.cs">
+      <DependentUpon>TextBoxWithLabel.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ViewModels\CommandSampleViewModel.cs" />
+    <Compile Include="ViewModels\DataItemViewModel.cs" />
+    <Compile Include="ViewModels\ItemViewModel.cs" />
+    <Compile Include="Model\ListTypes\xcrFileTypeStorage.cs" />
+    <Compile Include="ViewModels\MainDataViewModel.cs" />
+    <Compile Include="ViewModels\MainViewModel.cs" />
+    <Compile Include="ViewModels\ViewModelBase.cs" />
+    <Compile Include="xcMain.xaml.cs">
+      <DependentUpon>xcMain.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <None Include="Properties\AppManifest.xml" />
+    <None Include="Properties\WMAppManifest.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ApplicationIcon.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Background.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Resource Include="Images\CompanyLogo.png" />
+    <Resource Include="Images\AxcelerLogo.jpg" />
+    <Content Include="FinancialData\Daily.txt" />
+    <Content Include="FinancialData\Monthly.txt" />
+    <Content Include="FinancialData\Weekly.txt" />
+    <Resource Include="Images\ArrowDownNormal.png" />
+    <Resource Include="Images\Frame.png" />
+    <Resource Include="Images\FrameThumbnail.png" />
+    <Content Include="Images\appbar_aboutControlPoint.jpg" />
+    <Content Include="Images\appbar_callSupport.png" />
+    <Content Include="Images\appbar_emailSupport.jpg" />
+    <Content Include="Images\appbar_Idea.jpg" />
+    <Content Include="Images\appbar_Idea.png" />
+    <Content Include="Images\appbar_RatingIcon.png" />
+    <Content Include="SplashScreenImage.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="About.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Page Include="DetailsPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="MainPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="PivotPage1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="RadControlsItem1.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="SampleData\MainViewModelSampleData.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UserControls\ReportsPageUserControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControls\TextBoxWithLabel.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="xcMain.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Views\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\Silverlight for Phone\$(TargetFrameworkVersion)\Microsoft.Silverlight.$(TargetFrameworkProfile).Overrides.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\Silverlight for Phone\$(TargetFrameworkVersion)\Microsoft.Silverlight.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions />
+</Project>

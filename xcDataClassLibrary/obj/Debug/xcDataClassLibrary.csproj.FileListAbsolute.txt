@@ -1,0 +1,6 @@
+C:\Users\kthakkar\Documents\Visual Studio 2010\Projects\xcControlPoint\xcDataClassLibrary\Bin\Debug\xcDataClassLibrary.dll
+C:\Users\kthakkar\Documents\Visual Studio 2010\Projects\xcControlPoint\xcDataClassLibrary\Bin\Debug\xcDataClassLibrary.pdb
+C:\Users\kthakkar\Documents\Visual Studio 2010\Projects\xcControlPoint\xcDataClassLibrary\Bin\Debug\System.Data.Services.Client.dll
+C:\Users\kthakkar\Documents\Visual Studio 2010\Projects\xcControlPoint\xcDataClassLibrary\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\kthakkar\Documents\Visual Studio 2010\Projects\xcControlPoint\xcDataClassLibrary\obj\Debug\xcDataClassLibrary.dll
+C:\Users\kthakkar\Documents\Visual Studio 2010\Projects\xcControlPoint\xcDataClassLibrary\obj\Debug\xcDataClassLibrary.pdb

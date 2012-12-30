@@ -1,0 +1,46 @@
+﻿<phone:PhoneApplicationPage 
+    x:Class="xcControlPoint.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:telerikPrimitives="clr-namespace:Telerik.Windows.Controls;assembly=Telerik.Windows.Controls.Primitives"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    mc:Ignorable="d" shell:SystemTray.IsVisible="True" d:DesignHeight="768" d:DesignWidth="480" xmlns:my="clr-namespace:xcControlPoint.UserControls">
+
+    <!--LayoutRoot is the root grid where all page content is placed-->
+    <Grid x:Name="LayoutRoot" Background="Transparent">
+        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="649"/>
+        </Grid.RowDefinitions>
+
+        <!--TitlePanel contains the name of the application and page title-->
+        <StackPanel x:Name="TitlePanel" Margin="10,0,10,10" Height="113">                        
+            <Image x:Name="AxcelerLogo"  Margin="0,5,5,0" Source="Images/AxcelerLogo.jpg" Height="76" Width="432" Stretch="UniformToFill" />            
+            <TextBlock x:Name="ApplicationTitle" FontFamily="Georgia" FontSize="32" Text="ControlPoint" Style="{StaticResource PhoneTextNormalStyle}" HorizontalAlignment="Center" Foreground="YellowGreen" FontWeight="Bold" />
+            <!--<TextBlock x:Name="PageTitle" Text="page name" Margin="9,-7,0,0" Style="{StaticResource PhoneTextTitle1Style}"/>-->
+        </StackPanel>
+
+        <!--ContentPanel - place additional content here-->
+        <Grid x:Name="ContentPanel" Grid.Row="2" Margin="12,0,12,0">
+            <TextBlock x:Name ="tbControlPointSite" FontSize="26" FontFamily="Tahoma" HorizontalAlignment="Center" Text ="ControlPoint Configuration Site" Padding="50" Margin="-7,-4,9,4" />
+            <telerikPrimitives:RadTextBox x:Name="txtControlPointURL" Text="http://ketansp2010:3434/" Height="100" Margin="0,83,0,474" Background="White" VerticalAlignment="Stretch" Grid.Row = "2" VerticalContentAlignment="Bottom" IsEnabled="True" />
+
+            <TextBlock x:Name ="tbUserName" FontSize="26" FontFamily="Tahoma" HorizontalAlignment="Center" Text ="User Name" Padding="50" Margin="108,170,130,-170" />
+            <telerikPrimitives:RadTextBox x:Name="txtUserName" Background="White" Height="100" IsEnabled="True" Margin="0,244,0,313" Text="User1@axceler.com" VerticalAlignment="Center" VerticalContentAlignment="Stretch" />
+            
+            <TextBlock x:Name="tbPassword" FontFamily="Tahoma" FontSize="26" HorizontalAlignment="Center" Margin="117,316,131,-316" Padding="50" Text="Password" />
+            <PasswordBox x:Name="passPassword" Background="White" Height="100" IsEnabled="True" Margin="0,397,0,160" VerticalAlignment="Center" VerticalContentAlignment="Center" />
+            <TextBlock Height="30" HorizontalAlignment="Left" Margin="12,503,0,0" Name="tbResult" Text="..." VerticalAlignment="Top" TextWrapping="Wrap" />
+            <Button Content="Go!!" Height="72" HorizontalAlignment="Left" Margin="270,550,0,0" Name="btnGo" VerticalAlignment="Top" Width="160" Foreground="White" Background="YellowGreen" Click="BtnGoClick" />            
+        </Grid>
+    </Grid>
+</phone:PhoneApplicationPage>
+  
