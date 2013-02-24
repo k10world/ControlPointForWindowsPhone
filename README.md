@@ -3,8 +3,8 @@ ControlPointForWindowsPhone
 
 ControlPoint for Windows Phone was a summer project that I started during mid-2012. This was an effort to learn Windows Phone 7.5 development and get hands dirty. It turned out to be a great little client that leveraged the SharePoint list OData API to fetch data and display reports.
 <div>
-<div style ="float:left;"><img src="Portrait_MobyCP" alt="Portrait Mode Snapshot" /></div>
-<div style ="float:right;"><img src="Lanscape_MobyCP" alt="Landscape Mode Snapshot"  /></div>
+<div style ="float:left;"><img src="http://blogs.k10world.com/wp-content/uploads/2013/02/Portrait_CP_Moby.jpg" alt="Portrait Mode Snapshot" /></div>
+<div style ="float:right;"><img src="http://blogs.k10world.com/wp-content/uploads/2013/02/Landscape_MobyCP.jpg" alt="Landscape Mode Snapshot"  /></div>
 </div>
 
 <div style="clear:both">
