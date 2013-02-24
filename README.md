@@ -2,7 +2,12 @@ ControlPointForWindowsPhone
 ===========================
 
 ControlPoint for Windows Phone was a summer project that I started during mid-2012. This was an effort to learn Windows Phone 7.5 development and get hands dirty. It turned out to be a great little client that leveraged the SharePoint list OData API to fetch data and display reports.
+<div>
+<div style ="float:left;"><img src="Portrait_MobyCP" alt="Portrait Mode Snapshot" /></div>
+<div style ="float:right;"><img src="Lanscape_MobyCP" alt="Landscape Mode Snapshot"  /></div>
+</div>
 
+<div style="clear:both">
 ControlPoint for Windows Phone is a client application. That said, it does not run reports live, but instead shows reports that can be scheduled by ControlPoint on-premise or on-cloud. All that the user has to do in preparation is that schedule a report to run daily or hourly recurring and view the report anytime they want using their Windows Phone.
 
 Currently not all reports are available. The plumbing for Storage By File Type report is in place and other reports can be added easily. 
